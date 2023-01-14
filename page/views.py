@@ -5,13 +5,22 @@ from random import randint
 
 def home_view(request):
     # context = {"platform": f"Django platformu kullanıldı ve randint ile dönen veri:{randint(1,100)}"}
-    context = dict()
+    page_title = ("Ana Sayfa")
+    context = dict(
+        page_title = page_title,
+    )
     return render(request, "page/index.html", context)
 
 def about_us_view(request):
-    context = dict()
+    page_title = ("Hakkımızda")
+    context = dict(
+        page_title = page_title,
+    )
     return render(request, "page/hakkimizda.html", context)
 
 def contact_view(request):
-    context = dict()
+    page_title = ("İletişim")
+    context = dict(
+        page_title = page_title,
+    )
     return render(request, "page/iletisim.html", context)

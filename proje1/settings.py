@@ -126,10 +126,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # TASKS:
-# TODO: Ana Sayfayı göster
-# TODO: Hakkımızda, iletişim gibi sayfalar için view oluştur
-# TODO: Django makemigration & migrate
-# TODO: DTL yapısını oluştur
+# DONE: Ana Sayfayı göster
+# DONE: Hakkımızda, iletişim gibi sayfalar için view oluştur
+# DONE: Django makemigration & migrate
+# DONE: DTL yapısını oluştur
 # TODO: Ana sayfadaki karışık yapıdan kurtul
 # TODO: HTML dosyalarını oluştur
 # TODO: DRY?

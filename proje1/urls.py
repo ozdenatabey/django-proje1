@@ -22,8 +22,8 @@ from page.views import (
 )
 
 urlpatterns = [
-    path("",home_view),
-    path("hakkimizda.html", about_us_view),
-    path("iletisim.html", contact_view),
+    path("",home_view, name="home"),
+    path("hakkimizda/", about_us_view, name="about_us"),
+    path("iletisim/", contact_view, name="contact"),
     path('admin/', admin.site.urls),
 ]
