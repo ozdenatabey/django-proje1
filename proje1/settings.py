@@ -120,6 +120,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static_files'
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -131,8 +135,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # DONE: Django makemigration & migrate
 # DONE: DTL yapısını oluştur
 # TODO: Ana sayfadaki karışık yapıdan kurtul
-# TODO: HTML dosyalarını oluştur
-# TODO: DRY?
+# DONE: HTML dosyalarını oluştur
+# DONE: DRY?
 # TODO: App için urls.py oluştur
 # TODO: Statik dosyaları çalıştır
 # TODO: Sayfaları Fake DB içerisinde tutup SLUG ile çağırmaya çalışalım
